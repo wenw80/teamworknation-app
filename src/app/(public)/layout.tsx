@@ -1,11 +1,13 @@
 import type { ReactNode } from "react";
+import { SiteHeader } from "@/components/public/site-header";
+import { SiteFooter } from "@/components/public/site-footer";
 
 export default function PublicLayout({ children }: { children: ReactNode }) {
   return (
     <div className="min-h-screen flex flex-col">
-      {/* TODO: Public header/nav — Phase 4 */}
+      <SiteHeader />
       <main className="flex-1">{children}</main>
-      {/* TODO: Public footer — Phase 4 */}
+      <SiteFooter />
     </div>
   );
 }
